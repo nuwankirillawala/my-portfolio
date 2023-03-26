@@ -10,6 +10,7 @@ const abouts = [
   {title: 'Web Development', description: 'I am a good developer', imgUrl:images.about03},
   {title: 'Cloud Engieering', description: 'I am a good developer', imgUrl:images.about04},
 ]
+
 const About = () => {
   return (
     <>
