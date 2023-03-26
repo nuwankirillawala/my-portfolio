@@ -1,10 +1,11 @@
 import './Header.scss';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
+import { AppWrap } from '../../wrapper';
 
 const scaleVariants = {
   whileInView: {
-    scale: [0,1],
+    scale: [0, 1],
     opacity: [0, 1],
     transition: {
       duration: 1,
@@ -44,18 +45,18 @@ const Header = () => {
       >
         <img src={images.profile} alt="profile-bg" />
         <motion.img
-        whileInView={{ scale: [0, 1] }}
-        transition={{ duration: 1, ease: 'easeInOut' }}
-        className='overlay_circle'
-        src={images.circle}
-        alt='profile-circle'
+          whileInView={{ scale: [0, 1] }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
+          className='overlay_circle'
+          src={images.circle}
+          alt='profile-circle'
         />
       </motion.div>
 
       <motion.div
-      variant={scaleVariants}
-      whileInView={scaleVariants.whileInView}
-      className='app__header-circles'
+        variant={scaleVariants}
+        whileInView={scaleVariants.whileInView}
+        className='app__header-circles'
       >
         {[images.flutter, images.redux, images.sass].map((circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
@@ -67,4 +68,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default AppWrap(Header, 'home');
