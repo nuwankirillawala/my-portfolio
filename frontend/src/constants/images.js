@@ -18,6 +18,19 @@ import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 import java from '../assets/java.png';
+import azure from '../assets/azure.png';
+import c from '../assets/c.png';
+import csharp from '../assets/csharp.png';
+import docker from '../assets/docker.png';
+import jira from '../assets/jira.png';
+import mongodb from '../assets/mongodb.png';
+import mysql from '../assets/mysql.png';
+import netbeans from '../assets/netbeans.png';
+import php from '../assets/php.png';
+import postman from '../assets/postman.png';
+import trello from '../assets/trello.png';
+import visualstudio from '../assets/visualstudio.png';
+
 
 
 import about01 from '../assets/about01.png';
@@ -57,6 +70,19 @@ export default {
   sass,
   typescript,
   vue,
+  java,
+  c,
+  csharp,
+  php,
+  mysql,
+  jira,
+  docker,
+  mongodb,
+  netbeans,
+  postman,
+  trello,
+  visualstudio,
+  azure,
   about01,
   about02,
   about03,
@@ -71,5 +97,5 @@ export default {
   nb,
   skype,
   spotify,
-  java
+  
 };

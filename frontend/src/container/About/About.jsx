@@ -3,11 +3,12 @@ import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import ProfileCard from './ProfileCard';
 import { images } from '../../constants';
+import { Fragment } from 'react';
 
 const About = () => {
 
   return (
-    <>
+    <Fragment>
       <h2 className="head-text">
         I Know That
         <span> Good Apps </span>
@@ -43,7 +44,7 @@ const About = () => {
         imgUrl={images.about03}
         />
       </div>
-    </>
+    </Fragment>
   )
 }
 

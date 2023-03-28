@@ -1,26 +1,33 @@
 import './Work.scss'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { urlFor, client } from '../../client';
+import { images } from '../../constants';
+
+const myworks = [{
+  title: 'Test Project',
+  description: 'Test Desc',
+  projectLink: '',
+  gitHubLink: '',
+  imgUrl: images.about01,
+  tags: ['React Js', 'All' ]
+},
+{
+  title: 'Test Project',
+  description: 'Test Desc',
+  projectLink: '',
+  gitHubLink: '',
+  imgUrl: images.about01,
+  tags: ['UI/UX', 'All']
+}
+];
+
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 })
-  const [works, setWorks] = useState([])
-  const [filterWork, setFilterWork] = useState([])
-
-  useEffect(() => {
-    const query = '*[_type == "works"]';
-
-    client.fetch(query)
-      .then((data) => {
-        setWorks(data);
-        setFilterWork(data);
-      })
-  }, [])
-
-
+  const [works, setWorks] = useState(myworks)
+  const [filterWork, setFilterWork] = useState(myworks)
 
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
@@ -35,7 +42,6 @@ const Work = () => {
       }
     }, 500)
   }
-
 
   return (
     <>
@@ -65,14 +71,14 @@ const Work = () => {
         {filterWork.map((work, index) => (
           <div className="app__work-item app_flex">
             <div className="app__work-img app__flex">
-              <img src={urlFor(work.imgUrl)} alt={work.name} />
+              <img src={work.imgUrl} alt={work.title} />
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
                 className='app__work-hover app__flex'
               >
-                <a href="work.projectLink" target="_blank" rel='noreffer'>
+                <a href={work.projectLink} target="_blank" rel='noreffer'>
                   <motion.div
                   whileInView={{scale: [0, 1]}}
                     whileHover={{ scale: [1, 0.9] }}
@@ -82,7 +88,7 @@ const Work = () => {
                     <AiFillEye />
                   </motion.div>
                 </a>
-                <a href="work.projectLink" target="_blank" rel='noreffer'>
+                <a href={work.projectLink} target="_blank" rel='noreffer'>
                   <motion.div
                   whileInView={{scale: [0, 1]}}
                     whileHover={{ scale: [1, 0.9] }}

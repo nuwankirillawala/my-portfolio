@@ -4,40 +4,40 @@ import { Tooltip } from 'react-tooltip';
 import { motion } from 'framer-motion';
 import './Experience.scss';
 import 'react-tooltip/dist/react-tooltip.css';
-import { urlFor, client } from '../../client';
+import { client } from '../../client';
 
 const Experience = () => {
     const [experiences, setExperiences] = useState([]);
 
     useEffect(() => {
         const experienceQuery = '*[_type == "experiences"]';
-    
+
         client.fetch(experienceQuery)
-          .then((data) => {
-            setExperiences(data);
-          })
-      }, [])
+            .then((data) => {
+                setExperiences(data);
+            })
+    }, [])
 
     return (
         <Fragment>
             <h2 className="head-text">Experience & Professional Qualifications</h2>
-            <div className="app__skills-exp">
+            <div className="app__experience-container">
                 {experiences.map((experience) => (
                     <motion.div
-                        className="app__skills-exp-item"
+                        className="app__experience-item"
                         key={experience.year}
                     >
-                        <div className="app__skills-exp-year">
+                        <div className="app__experience-year">
                             <p className="bold-text">{experience.year}</p>
                         </div>
-                        <motion.div className="app__skills-exp-works">
+                        <motion.div className="app__experience-works">
                             {console.log(experience.works)}
                             {experience.works.map((work) => (
                                 <Fragment key={work.name}>
                                     <motion.div
                                         whileInView={{ opacity: [0, 1] }}
                                         transition={{ duration: 0.5 }}
-                                        className="app__skills-exp-work"
+                                        className="app__experience-work"
                                         data-tooltip-id={work.name}
                                         key={work.name}
                                     >
@@ -48,7 +48,7 @@ const Experience = () => {
                                     <Tooltip
                                         effect="solid"
                                         arrowColor="#fff"
-                                        className="skills-tooltip"
+                                        className="experience-tooltip"
                                         id={work.name}
                                         // place='bottom'
                                         key={work.name}
