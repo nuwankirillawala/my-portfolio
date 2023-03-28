@@ -1,38 +1,33 @@
 import './Skills.scss'
-import { useState, useEffect, Fragment } from 'react'
+import {Fragment } from 'react'
 import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { urlFor, client } from '../../client';
 import { images } from '../../constants';
 
-const mySkills = [
-  { name: 'HTML', icon: images.html},
-  { name: 'CSS', icon: images.css},
-  { name: 'JavaScript', icon: images.javascript},
-  { name: 'Sass', icon: images.sass},
-  { name: 'Node', icon: images.node},
-  { name: 'React', icon: images.react},
-  { name: 'PHP', icon: images.php},
-  { name: 'Java', icon: images.java},
-  { name: 'C', icon: images.c},
-  { name: 'C#', icon: images.csharp},
-  { name: 'MySQL', icon: images.mysql},
-  { name: 'MongoDB', icon: images.mongodb},
-  { name: 'MUI', icon: images.mu5},
-  { name: 'Git', icon: images.git},
-  { name: 'Postman', icon: images.postman},
-  { name: 'Jira', icon: images.jira},
-  { name: 'Trello', icon: images.trello},
-  { name: 'Visual Studio', icon: images.visualstudio},
-  { name: 'Netbeans', icon: images.netbeans},
-  { name: 'Azure', icon: images.azure},
-  { name: 'Docker', icon: images.docker},
-  
-]
-
 const Skills = () => {
-  const [skills, setSkills] = useState(mySkills);
-
+  const skills = [
+    { name: 'HTML', icon: images.html},
+    { name: 'CSS', icon: images.css},
+    { name: 'JavaScript', icon: images.javascript},
+    { name: 'Sass', icon: images.sass},
+    { name: 'Node', icon: images.node},
+    { name: 'React', icon: images.react},
+    { name: 'PHP', icon: images.php},
+    { name: 'Java', icon: images.java},
+    { name: 'C', icon: images.c},
+    { name: 'C#', icon: images.csharp},
+    { name: 'MySQL', icon: images.mysql},
+    { name: 'MongoDB', icon: images.mongodb},
+    { name: 'MUI', icon: images.mu5},
+    { name: 'Git', icon: images.git},
+    { name: 'Postman', icon: images.postman},
+    { name: 'Jira', icon: images.jira},
+    { name: 'Trello', icon: images.trello},
+    { name: 'Visual Studio', icon: images.visualstudio},
+    { name: 'Netbeans', icon: images.netbeans},
+    { name: 'Azure', icon: images.azure},
+    { name: 'Docker', icon: images.docker},
+  ];
 
   return (
     <Fragment>

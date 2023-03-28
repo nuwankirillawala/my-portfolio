@@ -94,6 +94,21 @@
       font-size: 0.9rem;
     }
   }
+
+  .extra-bold-text {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--black-color);
+    text-align: left;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 4rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 1.8rem;
+    }
+  }
   
   .app__social {
     display: flex;

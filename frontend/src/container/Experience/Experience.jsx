@@ -1,64 +1,29 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment } from 'react';
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { Tooltip } from 'react-tooltip';
-import { motion } from 'framer-motion';
 import './Experience.scss';
 import 'react-tooltip/dist/react-tooltip.css';
-import { client } from '../../client';
+import ExperienceItem from './ExperienceItem';
 
 const Experience = () => {
-    const [experiences, setExperiences] = useState([]);
-
-    useEffect(() => {
-        const experienceQuery = '*[_type == "experiences"]';
-
-        client.fetch(experienceQuery)
-            .then((data) => {
-                setExperiences(data);
-            })
-    }, [])
+    const experiences = [{
+        duration: '2023 - Present',
+        name: 'Teaching Assistant',
+        company: 'Nalanda IUHS Campus',
+        desc: 'I worked as a ta'
+    }]
 
     return (
         <Fragment>
-            <h2 className="head-text">Experience & Professional Qualifications</h2>
+            <h2 className="head-text">Experience</h2>
             <div className="app__experience-container">
                 {experiences.map((experience) => (
-                    <motion.div
-                        className="app__experience-item"
-                        key={experience.year}
-                    >
-                        <div className="app__experience-year">
-                            <p className="bold-text">{experience.year}</p>
-                        </div>
-                        <motion.div className="app__experience-works">
-                            {console.log(experience.works)}
-                            {experience.works.map((work) => (
-                                <Fragment key={work.name}>
-                                    <motion.div
-                                        whileInView={{ opacity: [0, 1] }}
-                                        transition={{ duration: 0.5 }}
-                                        className="app__experience-work"
-                                        data-tooltip-id={work.name}
-                                        key={work.name}
-                                    >
-                                        <h4 className="bold-text">{work.name}</h4>
-                                        <p className="p-text">{work.company}</p>
-
-                                    </motion.div>
-                                    <Tooltip
-                                        effect="solid"
-                                        arrowColor="#fff"
-                                        className="experience-tooltip"
-                                        id={work.name}
-                                        // place='bottom'
-                                        key={work.name}
-                                        content={work.desc}
-                                    />
-                                </Fragment>
-                            ))}
-                        </motion.div>
-                    </motion.div>
-                ))}
+                    <ExperienceItem
+                        duration={experience.duration}
+                        name={experience.name}
+                        company={experience.company}
+                        desc={experience.desc} />
+                ))
+                }
             </div>
         </Fragment>
     )
