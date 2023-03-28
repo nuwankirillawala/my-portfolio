@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.scss'
-import { About, Header, Footer, Skills, Testimonials, Work } from './container/index'
+import { About, Header, Footer, Skills, Testimonial, Work } from './container/index'
 import { Navbar } from './components/index'
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +12,7 @@ function App() {
       <About />
       <Work />
       <Skills />
-      <Testimonials />
+      <Testimonial />
       <Footer />
     </div>
   )
