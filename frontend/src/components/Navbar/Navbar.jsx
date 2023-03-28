@@ -1,10 +1,10 @@
 import './Navbar.scss'
 import { images } from '../../constants/index'
-import { HiMenuAlt4, HiX } from 'react-icons/hi'
+import { HiMenu, HiMenuAlt4, HiX } from 'react-icons/hi'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
-const menuItems = ['home','about', 'work', 'skills', 'testimonials', 'contact', ];
+const menuItems = ['home','about', 'work', 'experience', 'skills', 'testimonials', 'contact', ];
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
@@ -27,7 +27,7 @@ const Navbar = () => {
       {/* Hambureg navbar menu */}
 
       <div className="app__navbar-menu">
-        <HiMenuAlt4 onClick={() => setToggle(true)} />
+        <HiMenu onClick={() => setToggle(true)} />
         {
           toggle && (
             <motion.div
