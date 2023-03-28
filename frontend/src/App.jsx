@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.scss'
-import { About, Header, Footer, Skills, Experience, Testimonial, Work } from './container/index'
+import { About, Header, Footer, Education, Skills, Experience, Testimonial, Work } from './container/index'
 import { Navbar } from './components/index'
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
       <Navbar />
       <Header />
       <About />
+      <Education />
       <Work />
       <Skills />
       <Experience />

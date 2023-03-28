@@ -4,7 +4,7 @@ import { HiMenu, HiMenuAlt4, HiX } from 'react-icons/hi'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
-const menuItems = ['home','about', 'work', 'experience', 'skills', 'testimonials', 'contact', ];
+const menuItems = ['home','about','education', 'work', 'experience', 'skills', 'testimonials', 'contact', ];
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
