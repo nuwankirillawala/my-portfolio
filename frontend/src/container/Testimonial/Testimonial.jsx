@@ -5,35 +5,42 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Testimonial.scss';
 import { Fragment } from 'react';
+import { images } from '../../constants/';
 
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [testimonials, setTestimonials] = useState([]);
-  const [brands, setBrands] = useState([]);
+  // const [testimonials, setTestimonials] = useState([]);
+  // const [brands, setBrands] = useState([]);
+
+  const testimonials = [{
+    name: 'Harry Potter',
+    company: 'Hogwarts',
+    feedback: 'Good Developer',
+    imgUrl: images.sass
+  },
+  {
+    name: 'John Cena',
+    company: 'WWE',
+    feedback: 'You cant see me',
+    imgUrl: images.adidas
+  }
+  ];
+
+  const brands = [{
+    name: '',
+    imgUrl: images.sass
+  }]
 
   const handleClick = (index) => {
     setCurrentIndex(index);
   };
-
-  useEffect(() => {
-    const query = '*[_type == "testimonials"]';
-    const brandsQuery = '*[_type == "brands"]';
-
-    client.fetch(query).then((data) => {
-      setTestimonials(data);
-    });
-
-    client.fetch(brandsQuery).then((data) => {
-      setBrands(data);
-    });
-  }, []);
 
   return (
     <Fragment>
       {testimonials.length && (
         <Fragment>
           <div className="app__testimonial-item app__flex">
-            <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
+            <img src={testimonials[currentIndex].imgUrl} alt={testimonials[currentIndex].name} />
             <div className="app__testimonial-content">
               <p className="p-text">{testimonials[currentIndex].feedback}</p>
               <div>
@@ -56,13 +63,13 @@ const Testimonial = () => {
       )}
 
       <div className="app__testimonial-brands app__flex">
-        {brands.map((brand) => (
+        {brands.map((brand, index) => (
           <motion.div
             whileInView={{ opacity: [0, 1] }}
             transition={{ duration: 0.5, type: 'tween' }}
-            key={brand._id}
+            key={index}
           >
-            <img src={urlFor(brand.imgUrl)} alt={brand.name} />
+            <img src={brand.imgUrl} alt={brand.name} />
           </motion.div>
         ))}
       </div>
