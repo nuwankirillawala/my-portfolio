@@ -7,7 +7,7 @@ import { images } from '../../constants';
 
 const myworks = [{
   title: 'Industrial Training Management System',
-  description: 'Test Desc',
+  description: 'ITMS is a web platform for manage industrial training programme in Department of Computer Science - University of Ruhuna.',
   projectLink: '',
   gitHubLink: '',
   imgUrl: images.intern,
@@ -15,34 +15,34 @@ const myworks = [{
 },
 {
   title: 'Reservio - Booking App',
-  description: 'Test Desc',
+  description: 'Reservio is a booking app that create for Sri Lanka.',
   projectLink: '',
-  gitHubLink: '',
+  gitHubLink: 'https://github.com/nuwankirillawala/reservio-booking-app',
   imgUrl: images.reservio,
   tags: ['MERN', 'React', 'Node', 'Web App', 'All']
 },
 {
   title: 'Whisper - Messanger Chat App',
-  description: 'Test Desc',
-  projectLink: '',
-  gitHubLink: '',
+  description: 'A realtime chat application using Socket.io. The more advanced version is still in development.',
+  projectLink: 'https://realtime-chat-app-socket-io.vercel.app/',
+  gitHubLink: 'https://github.com/nuwankirillawala/realtime-chat-app-socket-io',
   imgUrl: images.chatapp,
   tags: ['React', 'Node', 'Web App', 'All']
 },
 {
   title: 'Code Ally - OpenAI Chat App',
-  description: 'Test Desc',
-  projectLink: '',
+  description: 'This AI chat app is created using OpenAI --text-davinci-003 model. Much like ChatGPT but not the same one.',
+  projectLink: 'https://code-ally-open-ai.vercel.app/',
   gitHubLink: '',
   imgUrl: images.codeally,
   tags: ['VanillaJS', 'Node', 'Web App', 'All']
 },
 {
   title: 'Modern Portfolio Website with Sanity CMS',
-  description: 'Test Desc',
-  projectLink: '',
-  gitHubLink: '',
-  imgUrl: images.about01,
+  description: 'This mordern portfolio is created with react and saas. I use Sanity CMS to manage the backend. This portfolio is much better for non-developer person also.',
+  projectLink: 'https://my-portfolio-henna-eta-34.vercel.app/',
+  gitHubLink: 'https://github.com/nuwankirillawala/modern-portfolio-react-sanity',
+  imgUrl: images.nuwan_dev_portfolio,
   tags: ['UI/UX', 'React', 'Sass', 'Sanity', 'Web App', 'All']
 },
 ];

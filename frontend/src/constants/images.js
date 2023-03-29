@@ -58,7 +58,7 @@ import frontend from '../assets/frontend.jpeg';
 import backend from '../assets/backend.jpg';
 import software from '../assets/software.jpeg';
 import uiux from '../assets/uiux.jpeg';
-
+import nuwan_dev_portfolio from '../assets/nuwan_dev_portfolio.png'
 
 
 
@@ -117,5 +117,6 @@ export default {
   frontend,
   backend,
   uiux,
-  software
+  software,
+  nuwan_dev_portfolio
 };
