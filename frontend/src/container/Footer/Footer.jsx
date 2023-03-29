@@ -57,6 +57,15 @@ const Footer = () => {
             +94 77 4756 349
           </a>
         </div>
+        <div className="app__footer-card">
+          <img src={images.whatsapp} alt="whatsapp" />
+          <a
+            href="https://api.whatsapp.com/send?phone=94774756349"
+            className="p-text"
+          >
+            +94 77 4756 349
+          </a>
+        </div>
       </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">

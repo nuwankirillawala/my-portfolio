@@ -53,6 +53,9 @@ import chatapp from '../assets/chatapp.jpeg';
 import codeally from '../assets/codeally.jpeg';
 import reservio from '../assets/reservio.jpeg';
 
+import whatsapp from '../assets/whatsapp.png';
+
+
 
 export default {
   email,
@@ -104,5 +107,6 @@ export default {
   intern,
   codeally,
   reservio,
-  chatapp
+  chatapp,
+  whatsapp
 };
