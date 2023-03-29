@@ -6,7 +6,7 @@ import EducationItem from './EducationItem';
 
 const Education = () => {
     const educations = [{
-        duration: '2020 - Present',
+        duration: '2020 - Now',
         name: 'Bachelor of Computer Science',
         company: 'University of Ruhuna',
         desc: 'I worked as a ta'

@@ -6,21 +6,45 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { images } from '../../constants';
 
 const myworks = [{
-  title: 'Test Project',
+  title: 'Industrial Trining Management System',
   description: 'Test Desc',
   projectLink: '',
   gitHubLink: '',
-  imgUrl: images.about01,
-  tags: ['React Js', 'All' ]
+  imgUrl: images.intern,
+  tags: ['MERN', 'React', 'Node', 'Web App', 'All' ]
 },
 {
-  title: 'Test Project',
+  title: 'Reservio - Booking App',
+  description: 'Test Desc',
+  projectLink: '',
+  gitHubLink: '',
+  imgUrl: images.reservio,
+  tags: ['MERN', 'React', 'Node', 'Web App', 'All']
+},
+{
+  title: 'Whisper - Messanger Chat App',
+  description: 'Test Desc',
+  projectLink: '',
+  gitHubLink: '',
+  imgUrl: images.chatapp,
+  tags: ['React', 'Node', 'Web App', 'All']
+},
+{
+  title: 'Code Ally - OpenAI Chat App',
+  description: 'Test Desc',
+  projectLink: '',
+  gitHubLink: '',
+  imgUrl: images.codeally,
+  tags: ['VanillaJS', 'Node', 'Web App', 'All']
+},
+{
+  title: 'Modern Portfolio Website with Sanity CMS',
   description: 'Test Desc',
   projectLink: '',
   gitHubLink: '',
   imgUrl: images.about01,
-  tags: ['UI/UX', 'All']
-}
+  tags: ['UI/UX', 'React', 'Sanity', 'Web App', 'All']
+},
 ];
 
 const Work = () => {
@@ -52,7 +76,7 @@ const Work = () => {
       </h2>
 
       <div className="app__work-filter">
-        {['UI/UX', 'Web App', 'Mobile App', 'React Js', 'All'].map((item, index) => (
+        {['UI/UX', 'MERN', 'React', 'Node', 'VanillaJS', 'Web App', 'OpenAI', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}

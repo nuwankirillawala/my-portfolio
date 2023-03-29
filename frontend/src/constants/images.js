@@ -31,8 +31,6 @@ import postman from '../assets/postman.png';
 import trello from '../assets/trello.png';
 import visualstudio from '../assets/visualstudio.png';
 
-
-
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
@@ -49,6 +47,12 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+
+import intern from '../assets/intern.jpg';
+import chatapp from '../assets/chatapp.jpeg';
+import codeally from '../assets/codeally.jpeg';
+import reservio from '../assets/reservio.jpeg';
+
 
 export default {
   email,
@@ -97,5 +101,8 @@ export default {
   nb,
   skype,
   spotify,
-  
+  intern,
+  codeally,
+  reservio,
+  chatapp
 };
