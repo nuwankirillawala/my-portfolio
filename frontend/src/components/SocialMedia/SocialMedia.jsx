@@ -19,7 +19,7 @@ const SocialMedia = () => {
             </a>
         </div>
         <div>
-          <a href="functionater.medium.com" target='_blank'>
+          <a href="https://functionater.medium.com/" target='_blank'>
             <BsMedium />
           </a>
         </div>
