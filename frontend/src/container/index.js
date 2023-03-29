@@ -7,4 +7,5 @@ export { default as Work } from './Work/Work'
 export { default as Experience } from "./Experience/Experience";
 export { default as Education } from "./Education/Education";
 export { default as Interests } from "./Interests/Interests";
+export { default as NotFound } from './NotFound/NotFound'
 
