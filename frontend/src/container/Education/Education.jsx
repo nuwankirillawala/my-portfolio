@@ -17,20 +17,22 @@ const Education = () => {
         company: 'Esoft Metro Campus - Kalutara',
         desc: 'I worked as a ta'
     }
-]
+    ]
 
     return (
         <Fragment>
-            <h2 className="head-text">education</h2>
+            <h2 className="head-text">Education - <span>Academic</span> Accomplishments</h2>
             <div className="app__education-container">
-                {educations.map((education) => (
-                    <EducationItem
-                        duration={education.duration}
-                        name={education.name}
-                        company={education.company}
-                        desc={education.desc} />
-                ))
-                }
+                <div className="app__education-column">
+                    {educations.map((education) => (
+                        <EducationItem
+                            duration={education.duration}
+                            name={education.name}
+                            company={education.company}
+                            desc={education.desc} />
+                    ))
+                    }
+                </div>
             </div>
         </Fragment>
     )

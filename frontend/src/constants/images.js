@@ -54,6 +54,11 @@ import codeally from '../assets/codeally.jpeg';
 import reservio from '../assets/reservio.jpeg';
 
 import whatsapp from '../assets/whatsapp.png';
+import frontend from '../assets/frontend.jpeg';
+import backend from '../assets/backend.jpg';
+import software from '../assets/software.jpeg';
+import uiux from '../assets/uiux.jpeg';
+
 
 
 
@@ -108,5 +113,9 @@ export default {
   codeally,
   reservio,
   chatapp,
-  whatsapp
+  whatsapp,
+  frontend,
+  backend,
+  uiux,
+  software
 };
