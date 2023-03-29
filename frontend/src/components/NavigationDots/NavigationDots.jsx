@@ -1,6 +1,7 @@
 import React from 'react'
 
-const menuItems = ['home','about','education', 'skills', 'work', 'experience','interests', 'testimonials', 'contact', ];
+// const menuItems = ['home','about','education', 'skills', 'work', 'experience','interests','testimonials', 'contact', ];
+const menuItems = ['home','about','education', 'skills', 'work', 'experience','interests', 'contact', ];
 
 const NavigationDots = ({ active }) => {
     return (
