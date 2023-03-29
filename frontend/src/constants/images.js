@@ -48,17 +48,17 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
-import intern from '../assets/intern.jpg';
-import chatapp from '../assets/chatapp.jpeg';
-import codeally from '../assets/codeally.jpeg';
-import reservio from '../assets/reservio.jpeg';
+import intern from '../assets/intern.webp';
+import chatapp from '../assets/chatapp.webp';
+import codeally from '../assets/codeally.webp';
+import reservio from '../assets/reservio.webp';
 
 import whatsapp from '../assets/whatsapp.png';
-import frontend from '../assets/frontend.jpeg';
-import backend from '../assets/backend.jpg';
-import software from '../assets/software.jpeg';
-import uiux from '../assets/uiux.jpeg';
-import nuwan_dev_portfolio from '../assets/nuwan_dev_portfolio.png'
+import frontend from '../assets/frontend.webp';
+import backend from '../assets/backend.webp';
+import software from '../assets/software.webp';
+import uiux from '../assets/uiux.webp';
+import nuwan_dev_portfolio from '../assets/nuwan_dev_portfolio.webp'
 
 
 
