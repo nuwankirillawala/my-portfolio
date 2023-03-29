@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import './Interests.scss';
 import 'react-tooltip/dist/react-tooltip.css';
 
-const InterestItem = (props) => {
+const SportItem = (props) => {
     return (
         <motion.div
             className="app__interest-item"
@@ -21,10 +21,7 @@ const InterestItem = (props) => {
                         data-tooltip-id={props.name}
                     >
                         <h4 className="bold-text">{props.name}</h4>
-                        {console.log(props.works)}
-                        {props.works && props.works.map((work, index) => (
-                            <p className="p-text" key={index}>{work.name}</p>
-                        ))}
+                        <p className="p-text">{props.level}</p>
                     </motion.div>
                     {/* <Tooltip
                         effect="solid"
@@ -40,4 +37,4 @@ const InterestItem = (props) => {
     )
 }
 
-export default InterestItem
+export default SportItem

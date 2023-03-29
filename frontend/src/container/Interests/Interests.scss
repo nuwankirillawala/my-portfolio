@@ -35,6 +35,10 @@
     color: var(--black-color);
     text-align: left;
     margin-top: 1.5rem;
+
+    span{
+        color: var(--secondary-color);
+    }
   
     @media screen and (min-width: 2000px) {
       font-size: 2rem;
