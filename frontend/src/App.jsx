@@ -22,7 +22,7 @@ function App() {
             <Footer />
           </div>
         } />
-        <Route path="/404notfound" element={
+        <Route path="/notfound" element={
           <NotFound />
         } />
       </Routes>

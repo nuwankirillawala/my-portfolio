@@ -1,9 +1,11 @@
 .app__notfound {
-    width: 100%;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
     margin: 4em 2rem 2rem;
 
     .app__notfound-item {
@@ -13,6 +15,14 @@
         align-items: center;
         margin: 1rem 0;
         padding: 1rem;
+
+        h2{
+            font-family: var(--font-base);
+        }
+
+        img{
+            width: 500px;
+        }
     }
 
     button {

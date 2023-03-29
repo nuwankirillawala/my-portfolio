@@ -59,6 +59,7 @@ import backend from '../assets/backend.webp';
 import software from '../assets/software.webp';
 import uiux from '../assets/uiux.webp';
 import nuwan_dev_portfolio from '../assets/nuwan_dev_portfolio.webp'
+import notfoundimg from '../assets/notfoundimg.png';
 
 
 
@@ -118,5 +119,6 @@ export default {
   backend,
   uiux,
   software,
-  nuwan_dev_portfolio
+  nuwan_dev_portfolio,
+  notfoundimg
 };
