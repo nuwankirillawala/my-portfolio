@@ -112,7 +112,7 @@ const Work = () => {
                     <AiFillEye />
                   </motion.div>
                 </a>
-                <a href={work.gitHubLink} target="_blank" rel='noreffer'>
+                <a href={work.githubLink ? work.githubLink: '/notfound'} target="_blank" rel='noreffer'>
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.9] }}
