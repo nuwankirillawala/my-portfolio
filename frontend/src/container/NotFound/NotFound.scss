@@ -7,52 +7,95 @@
     flex-wrap: wrap;
     flex-direction: column;
     margin: 1rem 2rem 2rem;
-
-    .app__notfound-item {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 1rem 0;
-        padding: 1rem;
-
-        h2 {
-            font-family: var(--font-base);
-        }
-
-        img {
-            width: 500px;
-        }
-
-        span{
-            color: var(--secondary-color);
-        }
+  }
+  
+  .app__notfound-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+  
+    h2 {
+      font-family: var(--font-base);
     }
-
-    button {
-        padding: 1rem 2rem;
-        border-radius: 10px;
-        border: none;
-        background-color: var(--secondary-color);
-        font-weight: 500;
-        color: var(--white-color);
-        outline: none;
-        font-family: var(--font-base);
-        transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-        cursor: pointer;
-
-        &:hover {
-            background-color: #2430af;
-        }
+  
+    img {
+      width: 500px;
     }
-}
-
-.app__notfound-p {
+  
+    span {
+      color: var(--secondary-color);
+    }
+  }
+  
+  button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+    font-weight: 500;
+    color: var(--white-color) !important;
+    outline: none;
+    font-family: var(--font-base);
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #2430af;
+    }
+  }
+  
+  .app__notfound-p {
     width: 60%;
     margin: 0rem 1rem !important;
     padding: 0 !important;
-
-    @media screen and (max-width: 500px) {
-        width: 80%;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .app__notfound {
+      margin: 1rem;
     }
-}
+    .app__notfound-item {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  
+      img {
+        width: 80%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .app__notfound {
+      margin: 1rem;
+    }
+    .app__notfound-item {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  
+      img {
+        width: 80%;
+        margin-bottom: 1rem;
+      }
+    }
+    .app__notfound-p {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .app__notfound-item {
+      img {
+        width: 100%;
+      }
+    }
+    .app__notfound-p {
+      width: 90%;
+      margin-top: 1rem;
+    }
+  }
