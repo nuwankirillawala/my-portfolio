@@ -23,10 +23,10 @@ function App() {
           </div>
         } />
         <Route path="/notfound" element={
-          <NotFound />
+          <NotFound type='working'/>
         } />
         <Route path="*" element={
-          <NotFound />
+          <NotFound type='404'/>
         } />
       </Routes>
     </Router>
