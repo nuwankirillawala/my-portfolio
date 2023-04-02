@@ -14,8 +14,24 @@ const myworks = [{
   tags: ['MERN', 'React', 'Node', 'Web App', 'All']
 },
 {
+  title: 'Helios Resturant Website',
+  description: 'Website for Helios resturant. This has multiple pages includng Home, About, Services, Blog, Team ad FAQ. I use React and Saas for fontend web development.',
+  projectLink: 'https://helios-resturant.netlify.app/',
+  gitHubLink: 'https://github.com/nuwankirillawala/helios-resturant-app',
+  imgUrl: images.helios_poster,
+  tags: ['React', 'UI/UX', 'Sass', 'Web App', 'All']
+},
+{
+  title: 'Modern Portfolio Website with Sanity CMS',
+  description: 'This mordern portfolio is created with react and saas. I use Sanity CMS to manage the backend. This portfolio is much better for non-developer person also.',
+  projectLink: 'https://my-portfolio-henna-eta-34.vercel.app/',
+  gitHubLink: 'https://github.com/nuwankirillawala/modern-portfolio-react-sanity',
+  imgUrl: images.nuwan_dev_portfolio,
+  tags: ['UI/UX', 'React', 'Sass', 'Sanity', 'Web App', 'All']
+},
+{
   title: 'Reservio - Booking App',
-  description: 'Reservio is a booking app that create for Sri Lanka.',
+  description: 'Reservio is a booking app that create for Sri Lanka. I use MERNstack to develop this app.',
   projectLink: '',
   gitHubLink: 'https://github.com/nuwankirillawala/reservio-booking-app',
   imgUrl: images.reservio,
@@ -35,15 +51,7 @@ const myworks = [{
   projectLink: 'https://code-ally-open-ai.vercel.app/',
   gitHubLink: '',
   imgUrl: images.codeally,
-  tags: ['VanillaJS', 'Node', 'Web App', 'All']
-},
-{
-  title: 'Modern Portfolio Website with Sanity CMS',
-  description: 'This mordern portfolio is created with react and saas. I use Sanity CMS to manage the backend. This portfolio is much better for non-developer person also.',
-  projectLink: 'https://my-portfolio-henna-eta-34.vercel.app/',
-  gitHubLink: 'https://github.com/nuwankirillawala/modern-portfolio-react-sanity',
-  imgUrl: images.nuwan_dev_portfolio,
-  tags: ['UI/UX', 'React', 'Sass', 'Sanity', 'Web App', 'All']
+  tags: ['VanillaJS', 'Node', 'Web App', 'OpenAI','All']
 },
 ];
 
