@@ -8,8 +8,8 @@ const Experience = () => {
     const experiences = [{
         duration: '2023 - Present',
         name: 'Teaching Assistant',
-        company: 'Nalanda IUHS Campus',
-        desc: 'I worked as a ta'
+        company: 'Nalanda IUHS Campus - Galle',
+        desc: "I'm currently work as a Teaching Assisitent in Nalanda IUHS Campus. I'm teaching Object Oriented Proframming with Java and Project Management. And also I'm responsible for monitoring students' personal projects."
     }]
 
     return (
