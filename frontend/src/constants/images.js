@@ -60,7 +60,7 @@ import software from '../assets/software.webp';
 import uiux from '../assets/uiux.webp';
 import nuwan_dev_portfolio from '../assets/nuwan_dev_portfolio.webp'
 import notfoundimg from '../assets/notfoundimg.png';
-import helios_poster from '../assets/helios-poster.png'
+import helios_poster from '../assets/helios-poster.webp'
 
 
 export default {
