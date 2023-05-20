@@ -9,14 +9,20 @@ const Education = () => {
         duration: '2020 - Now',
         name: 'Bachelor of Computer Science',
         company: 'University of Ruhuna',
-        desc: 'I worked as a ta'
+        desc: ''
     },
     {
         duration: '2019 - 2020',
-        name: 'Diploma in Software Engineering',
+        name: 'Diploma in Software Engineering (DiSE)',
         company: 'Esoft Metro Campus - Kalutara',
-        desc: 'I worked as a ta'
-    }
+        desc: ''
+    },
+    {
+        duration: '2019 - 2020',
+        name: 'Diploma in English (DiE)',
+        company: 'Esoft Metro Campus - Kalutara',
+        desc: ''
+    },
     ]
 
     return (
